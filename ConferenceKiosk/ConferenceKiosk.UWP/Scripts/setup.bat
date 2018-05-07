@@ -1,12 +1,12 @@
 @echo off
 
 set project=ConferenceVision
-set projectdir=%USERPROFILE%\Build2018
+set projectdir=%USERPROFILE%\Documents\GitHub
 set desktop=%USERPROFILE%\Desktop
 
 echo Copying project to desktop...
 
-xcopy %projectdir% %desktop% /s /e  
+xcopy "%projectdir%\%project%" "%desktop%\%project%\" /s /e  
 
 echo Opening Visual Studio...
 
